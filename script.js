@@ -74,8 +74,8 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe all menu cards, gallery items, and feature boxes
-document.querySelectorAll('.menu-card, .gallery-item, .feature, .contact-card').forEach(el => {
+// Observe all menu cards, feature boxes, and contact cards
+document.querySelectorAll('.menu-card, .feature, .contact-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
