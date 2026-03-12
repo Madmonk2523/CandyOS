@@ -269,8 +269,9 @@ a {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, minmax(280px, 420px));
+    gap: 48px;
+    justify-content: space-between;
     margin-top: 40px;
     max-width: 900px;
     margin-left: auto;
@@ -419,6 +420,8 @@ a {
     font-size: 0.95rem;
 }
 
+/* ============================================
+   VISIT US SECTION
    ============================================ */
 
 .visit-us {
@@ -716,23 +719,17 @@ a {
         font-size: 3rem;
     }
 
-    .menu, .about, .gallery, .visit-us, .contact {
+    .menu, .about, .reviews, .visit-us, .contact {
         padding: 100px 40px;
     }
 
     .menu-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
+        grid-template-columns: repeat(2, minmax(280px, 420px));
+        gap: 56px;
+        justify-content: space-between;
     }
 
-    .about-features {
-        grid-template-columns: repeat(3, 1fr);
-    }
 
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
     .visit-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -762,12 +759,12 @@ a {
     }
 
     .menu-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, minmax(300px, 440px));
+        gap: 64px;
+        justify-content: space-between;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }}
+}
 
 /* Mobile (under 768px) - Hamburger Menu */
 @media (max-width: 767px) {
@@ -833,14 +830,24 @@ a {
         gap: 20px;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+    .menu-card-image {
+        height: 220px;
     }
 
-    .gallery-item {
-        height: 180px;
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
+
+    .review-card {
+        padding: 24px;
+    }
+
+    .review-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
     .visit-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -895,19 +902,15 @@ a {
     }
 
     .menu-card-image {
-        height: 150px;
+        height: 180px;
     }
 
     .about-text {
         font-size: 0.95rem;
     }
 
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-item {
-        height: 220px;
+    .review-card {
+        padding: 20px;
     }
 
     .contact-card {
