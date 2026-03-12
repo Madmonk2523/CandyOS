@@ -354,50 +354,6 @@ a {
     color: var(--text-light);
 }
 
-.about-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.feature {
-    background: var(--white);
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-}
-
-.feature:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
-}
-
-.feature-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.feature-icon {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    animation: bounce 2s infinite;
-}
-
-.feature h3 {
-    margin-bottom: 10px;
-    color: var(--primary-pink);
-}
-
-.feature p {
-    font-size: 0.95rem;
-}
-
 
 /* ============================================
    VISIT US SECTION
@@ -815,11 +771,6 @@ a {
         gap: 20px;
     }
 
-    .about-features {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
@@ -887,10 +838,6 @@ a {
 
     .about-text {
         font-size: 0.95rem;
-    }
-
-    .feature-icon {
-        font-size: 2.5rem;
     }
 
     .gallery-grid {
